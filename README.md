@@ -66,7 +66,7 @@ GPT와 같은 LLM 모델들이 고도화 되면서 자연어 생성 뿐만 아�
 ## Table: Comparison of Language models and Machine learning models
 
 |  Score\Method  | No RAG | Naive RAG | Multi Query |  
-| ------------  | ---------------- | ------------------- |
+| ------------  | ---------------- | ------------------- | ------------------- |
 |  F1-score  | 0.7363 | 0.6982 |
 |  Precision | 0.6661 | 0.6153 |
 |   Recall   | 0.8246 | 0.8075 |
