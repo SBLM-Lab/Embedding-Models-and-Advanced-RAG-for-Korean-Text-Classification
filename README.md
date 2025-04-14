@@ -63,43 +63,68 @@ GPT와 같은 LLM 모델들이 고도화 되면서 자연어 생성 뿐만 아�
     *Figure 1: Data preprocessing from sequence to text. Source: [논문링크](link).*
 </p>
 
-## Table: Mean of metrics of various RAG methods on the legal dataset
+\begin{table}[ht]
+\centering
+\begin{tabular}{cc}  % 2개의 열
+% ---- 1행: legal + ethical ----
+\begin{minipage}{0.48\textwidth}
+\centering
+\textbf{Legal Dataset}\\
+\begin{tabular}{l|ccccccc}
+Score & No RAG & Naive & Multi & HyDE & Hybrid & Rerank & Heur. \\
+\hline
+F1      & 0.5466 & 0.6690 & 0.7170 & 0.7095 & 0.6682 & 0.6513 & 0.6278 \\
+Prec.   & 0.6915 & 0.7291 & 0.6878 & 0.6527 & 0.7167 & 0.7064 & 0.6687 \\
+Recall  & 0.4521 & 0.6183 & 0.7490 & 0.7772 & 0.6261 & 0.6043 & 0.5918 \\
+Acc.    & 0.5615 & 0.6430 & 0.6542 & 0.6276 & 0.6365 & 0.6216 & 0.5897 \\
+\end{tabular}
+\end{minipage}
+&
+\begin{minipage}{0.48\textwidth}
+\centering
+\textbf{Ethical Dataset}\\
+\begin{tabular}{l|ccccccc}
+Score & No RAG & Naive & Multi & HyDE & Hybrid & Rerank & Heur. \\
+\hline
+F1      & 0.6720 & 0.7033 & 0.7045 & 0.6773 & 0.7438 & 0.7140 & 0.6617 \\
+Prec.   & 0.6778 & 0.7407 & 0.6048 & 0.6775 & 0.7056 & 0.6650 & 0.7133 \\
+Recall  & 0.6679 & 0.6715 & 0.8438 & 0.6774 & 0.7828 & 0.7712 & 0.6173 \\
+Acc.    & 0.6746 & 0.7184 & 0.6461 & 0.6770 & 0.7289 & 0.6911 & 0.6845 \\
+\end{tabular}
+\end{minipage}
+\\[2ex]
+% ---- 2행: complaint + commerce ----
+\begin{minipage}{0.48\textwidth}
+\centering
+\textbf{Complaint Dataset}\\
+\begin{tabular}{l|ccccccc}
+Score & No RAG & Naive & Multi & HyDE & Hybrid & Rerank & Heur. \\
+\hline
+F1-M   & 0.3118 & 0.6467 & 0.6816 & 0.6455 & 0.6549 & 0.6527 & 0.4650 \\
+F1-W   & 0.4249 & 0.6665 & 0.6833 & 0.6488 & 0.6765 & 0.6556 & 0.6068 \\
+Prec.  & 0.4252 & 0.7033 & 0.7085 & 0.6705 & 0.6937 & 0.6725 & 0.5235 \\
+Recall & 0.3228 & 0.6386 & 0.6769 & 0.6410 & 0.6495 & 0.6508 & 0.4513 \\
+Acc.   & 0.4398 & 0.6581 & 0.6786 & 0.6443 & 0.6709 & 0.6537 & 0.5889 \\
+\end{tabular}
+\end{minipage}
+&
+\begin{minipage}{0.48\textwidth}
+\centering
+\textbf{Commerce Dataset}\\
+\begin{tabular}{l|ccccccc}
+Score & No RAG & Naive & Multi & HyDE & Hybrid & Rerank & Heur. \\
+\hline
+F1-M   & 0.4946 & 0.7379 & 0.7395 & 0.7069 & 0.7477 & 0.6724 & 0.5600 \\
+F1-W   & 0.5929 & 0.7462 & 0.7444 & 0.7236 & 0.7528 & 0.6952 & 0.6702 \\
+Prec.  & 0.5720 & 0.7589 & 0.7559 & 0.7296 & 0.7631 & 0.7193 & 0.7066 \\
+Recall & 0.5157 & 0.7473 & 0.7475 & 0.7157 & 0.7554 & 0.6883 & 0.6570 \\
+Acc.   & 0.6181 & 0.7557 & 0.7524 & 0.7325 & 0.7606 & 0.7117 & 0.6828 \\
+\end{tabular}
+\end{minipage}
+\end{tabular}
+\caption{Comparison of RAG method performance across four datasets (2×2 layout)}
+\end{table}
 
-|  Score\Method  | No RAG | Naive RAG | Multi Query |  HyDE | Hybrid Search | Reranker | Heuristic Filtering and Summary
-| ------------  | ---------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
-|  F1-score  | 0.5466 | 0.6690 | 0.7170 | 0.7095 | 0.6682 | 0.6513 | 0.6278     
-|  Precision | 0.6915 | 0.7291 | 0.6878 | 0.6527 | 0.7167 | 0.7064 | 0.6687
-|   Recall   | 0.4521 | 0.6183 | 0.7490 | 0.7772 | 0.6261 | 0.6043 | 0.5918
-|  Accuracy  | 0.5615 | 0.6430 | 0.6542 | 0.6276 | 0.6365 | 0.6216 | 0.5897
-
-## Table: Mean of metrics of various RAG methods on the ethical dataset
-
-|  Score\Method  | No RAG | Naive RAG | Multi Query |  HyDE | Hybrid Search | Reranker | Heuristic Filtering and Summary
-| ------------  | ---------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
-|  F1-score  | 0.6720 | 0.7033 | 0.7045 | 0.6773 | 0.7438 | 0.7140 | 0.6617 |     
-|  Precision | 0.6778 | 0.7407 | 0.6048 | 0.6775 | 0.7056 | 0.6650 | 0.7133 |
-|   Recall   | 0.6679 | 0.6715 | 0.8438 | 0.6774 | 0.7828 | 0.7712 | 0.6173 |
-|  Accuracy  | 0.6746 | 0.7184 | 0.6461 | 0.6770 | 0.7289 | 0.6911 | 0.6845 |
-
-## Table: Mean of metrics of various RAG methods on the complaint dataset
-
-|  Score\Method  | No RAG | Naive RAG | Multi Query |  HyDE | Hybrid Search | Reranker | Heuristic Filtering and Summary
-| ------------  | ---------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
-|  Macro F1-score | 0.3118 | 0.6467 | 0.6816 | 0.6455 | 0.6549 | 0.6527 | 0.4650 |     
-|  Weighted F1-score  | 0.4249 | 0.6665 | 0.6833 | 0.6488 | 0.6765 | 0.6556 | 0.6068 |     
-|  Precision | 0.4252 | 0.7033 | 0.7085 | 0.6705 | 0.6937 | 0.6725 | 0.5235 |
-|   Recall   | 0.3228 | 0.6386 | 0.6769 | 0.6410 | 0.6495 | 0.6508 | 0.4513 |
-|  Accuracy  | 0.4398 | 0.6581 | 0.6786 | 0.6443 | 0.6709 | 0.6537 | 0.5889 |
-
-## Table: Mean of metrics of various RAG methods on the commerce dataset
-
-|  Score\Method  | No RAG | Naive RAG | Multi Query |  HyDE | Hybrid Search | Reranker | Heuristic Filtering and Summary
-| ------------  | ---------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
-|  Macro F1-score | 0.4946 | 0.7379 | 0.7395 | 0.7069 | 0.7477 | 0.6724 | 0.5600 |     
-|  Weighted F1-score  | 0.5929 | 0.7462 | 0.7444 | 0.7236 | 0.7528 | 0.6952 | 0.6702 |     
-|  Precision | 0.5720 | 0.7589 | 0.7559 | 0.7296 | 0.7631 | 0.7193 | 0.7066 |
-|   Recall   | 0.5157 | 0.7473 | 0.7475 | 0.7157 | 0.7554 | 0.6883 | 0.6570 |
-|  Accuracy  | 0.6181 | 0.7557 | 0.7524 | 0.7325 | 0.7606 | 0.7117 | 0.6828 |
 
 
 ## Significance
