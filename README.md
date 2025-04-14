@@ -16,6 +16,7 @@
             <td align='center'><a href="https://github.com/ymk713"><img src="https://github.com/ymk713.png" width="100" height="100"></td>
             <td align='center'><a href="https://github.com/Bluemming"><img src="https://github.com/Bluemming.png" width="100" height="100"></td>
             <td align='center'><a href="https://github.com/iwantpubao"><img src="https://github.com/iwantpubao.png" width="100" height="100"></td>
+            <td align='center'><a href="https://github.com/ByungwookYang"><img src="https://github.com/ByungwookYang.png" width="100" height="100"></td>
           <tr>
             <td align='center'>김민경</td>
             <td align='center'>김유미</td>
