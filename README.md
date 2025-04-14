@@ -136,7 +136,29 @@ GPT와 같은 LLM 모델들이 고도화 되면서 자연어 생성 뿐만 아�
 <tr><th>Score\Method</th><th>No RAG</th><th>Naive</th><th>Multi</th><th>HyDE</th><th>Hybrid</th><th>Rerank</th><th>Heur.</th></tr>
 <tr><td>Macro F1</td><td>0.3118</td><td>0.6467</td><td>0.6816</td><td>0.6455</td><td>0.6549</td><td>0.6527</td><td>0.4650</td></tr>
 <tr><td>Weighted F1</td><td>0.4249</td><td>0.6665</td><td>0.6833</td><td>0.6488</td><td>0.6765</td><td>0.6556</td><td>0.6068</td></tr>
-<tr><td>Precision</
+<tr><td>Precision</td><td>0.4252</td><td>0.7033</td><td>0.7085</td><td>0.6705</td><td>0.6937</td><td>0.6725</td><td>0.5235</td></tr>
+<tr><td>Recall</td><td>0.3228</td><td>0.6386</td><td>0.6769</td><td>0.6410</td><td>0.6495</td><td>0.6508</td><td>0.4513</td></tr>
+<tr><td>Accuracy</td><td>0.4398</td><td>0.6581</td><td>0.6786</td><td>0.6443</td><td>0.6709</td><td>0.6537</td><td>0.5889</td></tr>
+</table>
+
+</td>
+<td>
+
+<strong>Commerce Dataset</strong>  
+<table>
+<tr><th>Score\Method</th><th>No RAG</th><th>Naive</th><th>Multi</th><th>HyDE</th><th>Hybrid</th><th>Rerank</th><th>Heur.</th></tr>
+<tr><td>Macro F1</td><td>0.4946</td><td>0.7379</td><td>0.7395</td><td>0.7069</td><td>0.7477</td><td>0.6724</td><td>0.5600</td></tr>
+<tr><td>Weighted F1</td><td>0.5929</td><td>0.7462</td><td>0.7444</td><td>0.7236</td><td>0.7528</td><td>0.6952</td><td>0.6702</td></tr>
+<tr><td>Precision</td><td>0.5720</td><td>0.7589</td><td>0.7559</td><td>0.7296</td><td>0.7631</td><td>0.7193</td><td>0.7066</td></tr>
+<tr><td>Recall</td><td>0.5157</td><td>0.7473</td><td>0.7475</td><td>0.7157</td><td>0.7554</td><td>0.6883</td><td>0.6570</td></tr>
+<tr><td>Accuracy</td><td>0.6181</td><td>0.7557</td><td>0.7524</td><td>0.7325</td><td>0.7606</td><td>0.7117</td><td>0.6828</td></tr>
+</table>
+
+</td>
+  </tr>
+</table>
+
+ 
 
 
 
