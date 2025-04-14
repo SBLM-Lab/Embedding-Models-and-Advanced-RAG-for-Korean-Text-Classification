@@ -77,14 +77,6 @@ GPT와 같은 LLM 모델들이 고도화 되면서 자연어 생성 뿐만 아�
 
 ## Citation
 ```
-@article{?,
-  title={Comparison of Classification Performance of Language Models using Sequence-to-Text Techniques},
-  author={Kim, M., Kim, Y., Min, J., Seong, H., and Jung, Y.},
-  journal={Journal of the Korean Data & Information Science Society.},
-  volume={35},
-  number={6},
-  pages={815-834 (20 pages)},
-  year={2024}
-}
+
 ```
 
