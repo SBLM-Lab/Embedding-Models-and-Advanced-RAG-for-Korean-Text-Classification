@@ -41,3 +41,49 @@
 </div>
 
 ---
+
+## Background
+활발한 언어 모형의 개발이 진행되고 있으며 다양한 분야에 사용될 수 있습니다. 전통적인 통계학이나 머신러닝 분야에서는 이진 분류에 대한 연구가 활발하게 진행되어왔고, 언어 모형들 역시 동일한 과제를 수행 가능합니다.
+
+## Objective
+이 논문에서의 주요 목표는 시계열 데이터의 패턴을 언어 모델로 학습하고 분류 예측에 사용하는 것입니다.
+
+
+## Key Ideas
+1. 연속된 시계열 데이터를 시퀀스 형태로 나열한 후 언어 모델이 이해할 수 있는 텍스트 형태로 변환합니다.
+2. 단순히 순차적 행동을 텍스트로 나열하는 것이 아니라, 요약 정보를 문장 초두에 함께 제시합니다.
+3. 사전 학습된 언어 모델을 HuggingFace로부터 불러와 분류 과제를 학습하여 예측을 수행합니다.
+4. 동일한 정보량이 주어졌을 때, 언어 모델과 머신러닝 모델의 예측 성능을 비교합니다.
+
+<p align="center">
+  <img src="./images/preprocess_figure1.png" alt="sequence-to-text" width="800"/>
+</p>
+<p align="center">
+    *Figure 1: Data preprocessing from sequence to text. Source: [논문링크](link).*
+</p>
+
+## Table: Comparison of Language models and Machine learning models
+
+|  Score\Model  | BERT(scenario 4) | XGBoost(scenario 1) |
+| ------------  | ---------------- | ------------------- |
+|  F1-score  | 0.7363 | 0.6982 |
+|  Precision | 0.6661 | 0.6153 |
+|   Recall   | 0.8246 | 0.8075 |
+|  Accuracy  | 0.7049 | 0.6511 |
+
+## Significance
+첫번째 시나리오를 통해 언어 모델이 머신러닝 모델과 비슷한 성능을 보이고, 그 이외의 시나리오에서 더 우수한 분류 성능을 보여주어 언어 모형들의 예측 능력이 뛰어남을 확인하였다.
+
+## Citation
+```
+@article{?,
+  title={Comparison of Classification Performance of Language Models using Sequence-to-Text Techniques},
+  author={Kim, M., Kim, Y., Min, J., Seong, H., and Jung, Y.},
+  journal={Journal of the Korean Data & Information Science Society.},
+  volume={35},
+  number={6},
+  pages={815-834 (20 pages)},
+  year={2024}
+}
+```
+
