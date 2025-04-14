@@ -101,6 +101,43 @@ GPT와 같은 LLM 모델들이 고도화 되면서 자연어 생성 뿐만 아�
 |   Recall   | 0.5157 | 0.7473 | 0.7475 | 0.7157 | 0.7554 | 0.6883 | 0.6570 |
 |  Accuracy  | 0.6181 | 0.7557 | 0.7524 | 0.7325 | 0.7606 | 0.7117 | 0.6828 |
 
+<table>
+  <tr>
+    <td>
+
+<strong>Legal Dataset</strong>  
+<table>
+<tr><th>Score\Method</th><th>No RAG</th><th>Naive</th><th>Multi</th><th>HyDE</th><th>Hybrid</th><th>Rerank</th><th>Heur.</th></tr>
+<tr><td>F1</td><td>0.5466</td><td>0.6690</td><td>0.7170</td><td>0.7095</td><td>0.6682</td><td>0.6513</td><td>0.6278</td></tr>
+<tr><td>Precision</td><td>0.6915</td><td>0.7291</td><td>0.6878</td><td>0.6527</td><td>0.7167</td><td>0.7064</td><td>0.6687</td></tr>
+<tr><td>Recall</td><td>0.4521</td><td>0.6183</td><td>0.7490</td><td>0.7772</td><td>0.6261</td><td>0.6043</td><td>0.5918</td></tr>
+<tr><td>Accuracy</td><td>0.5615</td><td>0.6430</td><td>0.6542</td><td>0.6276</td><td>0.6365</td><td>0.6216</td><td>0.5897</td></tr>
+</table>
+
+</td>
+<td>
+
+<strong>Ethical Dataset</strong>  
+<table>
+<tr><th>Score\Method</th><th>No RAG</th><th>Naive</th><th>Multi</th><th>HyDE</th><th>Hybrid</th><th>Rerank</th><th>Heur.</th></tr>
+<tr><td>F1</td><td>0.6720</td><td>0.7033</td><td>0.7045</td><td>0.6773</td><td>0.7438</td><td>0.7140</td><td>0.6617</td></tr>
+<tr><td>Precision</td><td>0.6778</td><td>0.7407</td><td>0.6048</td><td>0.6775</td><td>0.7056</td><td>0.6650</td><td>0.7133</td></tr>
+<tr><td>Recall</td><td>0.6679</td><td>0.6715</td><td>0.8438</td><td>0.6774</td><td>0.7828</td><td>0.7712</td><td>0.6173</td></tr>
+<tr><td>Accuracy</td><td>0.6746</td><td>0.7184</td><td>0.6461</td><td>0.6770</td><td>0.7289</td><td>0.6911</td><td>0.6845</td></tr>
+</table>
+
+</td>
+  </tr>
+  <tr>
+    <td>
+
+<strong>Complaint Dataset</strong>  
+<table>
+<tr><th>Score\Method</th><th>No RAG</th><th>Naive</th><th>Multi</th><th>HyDE</th><th>Hybrid</th><th>Rerank</th><th>Heur.</th></tr>
+<tr><td>Macro F1</td><td>0.3118</td><td>0.6467</td><td>0.6816</td><td>0.6455</td><td>0.6549</td><td>0.6527</td><td>0.4650</td></tr>
+<tr><td>Weighted F1</td><td>0.4249</td><td>0.6665</td><td>0.6833</td><td>0.6488</td><td>0.6765</td><td>0.6556</td><td>0.6068</td></tr>
+<tr><td>Precision</
+
 
 
 ## Significance
