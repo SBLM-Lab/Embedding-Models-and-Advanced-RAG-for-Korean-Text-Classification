@@ -6,7 +6,7 @@
 <table>
     <thead>
         <tr>
-            <th colspan="4"> First Author </th>
+            <th colspan="5"> First Author </th>
         </tr>
     </thead>
     <tbody>
