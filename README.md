@@ -15,7 +15,7 @@
             <td align='center'><a href=""><img src="" width="100" height="100"></td>
             <td align='center'><a href=""><img src="" width="100" height="100"></td>
             <td align='center'><a href=""><img src="" width="100" height="100"></td>
-            <td align='center'><a href=""><img src="" width="100" height="100"></td>
+            <td align='center'><a href="https://github.com/min0908"><img src="https://github.com/min0908.png" width="100" height="100"></td>
             <td align='center'><a href="https://github.com/ByungwookYang"><img src="https://github.com/ByungwookYang.png" width="100" height="100"></td>
           <tr>
             <td align='center'>김혜윤</td>
