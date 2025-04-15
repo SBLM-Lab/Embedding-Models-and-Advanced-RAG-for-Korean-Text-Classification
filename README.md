@@ -56,12 +56,7 @@ GPT와 같은 LLM 모델들이 고도화 되면서 자연어 생성 뿐만 아�
 3. 검색 결과와 함께 GPT-3.5-turbo API를 호출하여 입력 문장의 분류를 예측합니다.
 4. 다양한 데이터셋을 대상으로 고도화된 RAG 방법들을 적용하고, 각 방법의 분류 예측 성능을 비교 분석합니다.
 
-<p align="center">
-  <img src="./images/preprocess_figure1.png" alt="sequence-to-text" width="800"/>
-</p>
-<p align="center">
-    *Figure 1: Data preprocessing from sequence to text. Source: [논문링크](link).*
-</p>
+
 
 ## Table: Mean of metrics of various RAG methods on datasets
 
