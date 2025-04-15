@@ -6,16 +6,16 @@
 <table>
     <thead>
         <tr>
-            <th colspan="4"> First Author </th>
+            <th colspan="5"> First Author </th>
         </tr>
     </thead>
     <tbody>
         <tr>
           <tr>
-            <td align='center'><a href=""><img src="" width="100" height="100"></td>
-            <td align='center'><a href=""><img src="" width="100" height="100"></td>
-            <td align='center'><a href=""><img src="" width="100" height="100"></td>
-            <td align='center'><a href=""><img src="" width="100" height="100"></td>
+            <td align='center'><a href="https://github.com/HyeyoonKim0711"><img src="https://github.com/HyeyoonKim0711.png" width="100" height="100"></td>
+            <td align='center'><a href="https://github.com/1020nys"><img src="https://github.com/1020nys.png" width="100" height="100"></td>
+            <td align='center'><a href="https://github.com/jhyeok2841"><img src="https://github.com/jhyeok2841.png" width="100" height="100"></td>
+            <td align='center'><a href="https://github.com/min0908"><img src="https://github.com/min0908.png" width="100" height="100"></td>
             <td align='center'><a href="https://github.com/ByungwookYang"><img src="https://github.com/ByungwookYang.png" width="100" height="100"></td>
           <tr>
             <td align='center'>김혜윤</td>
@@ -127,7 +127,8 @@ GPT와 같은 LLM 모델들이 고도화 되면서 자연어 생성 뿐만 아�
 
 
 ## Significance
-첫번째 시나리오를 통해 언어 모델이 머신러닝 모델과 비슷한 성능을 보이고, 그 이외의 시나리오에서 더 우수한 분류 성능을 보여주어 언어 모형들의 예측 능력이 뛰어남을 확인하였다.
+모든 데이터셋에서 RAG를 사용하지 않은 분류 방식보다 RAG 기반 방법론이 더 우수한 성능을 보였으며, 데이터의 특성에 따라 적절한 Advanced RAG 기법을 적용한 경우 향상된 분류 예측 성능을 확인하였다.
+
 
 ## Citation
 ```
